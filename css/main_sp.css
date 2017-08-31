@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------------- sp (min-767px) */
+
+@media screen and (max-width: 767px) {
+
+	li {
+		font-size: 1.4rem;
+	}
+
+	/* ------------------------------------------------------------------- drawer manu */
+
+	.drawer-menu {
+		padding: 0 1rem;
+	 	font-size: 1.4rem;
+	}
+
+	.drawer-menu > li {
+		padding-top: 10px;
+	}
+
+	.drawer-menu > li > ul >li {
+		margin: 0 0 0 3rem;
+		padding-top: 5px;
+	}
+
+	.drawer-hamburger {
+		opacity: 0.8;
+		float: right;
+		margin: 5px;
+		padding: 12px 12px 22px;
+		border: 1px solid white;
+		border-radius: 4px;
+		background-color: white;
+	}
+
+	.drawer-hamburger:hover {
+	    background-color: white;
+	}
+
+	/* ------------------------------------------------------------------- pc-menu */
+
+	.pc-menu {
+		display: none;
+	}
+
+	/* ------------------------------------------------------------------- sp-manu */
+
+	.sp-menu {
+	 	display: inline;
+	 }
+
+	/* ------------------------------------------------------------------- item-merit */
+
+	.flexbox {
+		flex-direction: column;
+	}
+
+	/* ------------------------------------------------------------------- hot-topic */
+
+	.hot-topic_subtitle,
+	.hot-topic_comment {
+		width: 100%;
+	}
+
+	.img_nail_topic {
+		display: block;
+		float: none;
+		width: 60%;
+		margin: 0 auto;
+		padding: 8%;
+	}
+	
+}

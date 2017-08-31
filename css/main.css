@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------------- common & pc (768px-max) */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+ 	color: black;
+ 	font-weight: 400;
+ 	font-size: 1.0rem;
+ 	line-height: 1.6;
+ 	font-family: "Noto Sans Japanese";
+}
+
+img {
+ 	width: 100%;
+ 	height: auto;
+}
+
+h1,h2,h3 {
+	font-size: 2.0rem;
+}
+
+h3 {
+	padding-bottom: 2rem;
+	padding-left: 1rem;
+}
+
+h4 {
+	padding-top: 1.8rem;
+	padding-bottom: 1.8rem;
+	font-size: 1.8rem;
+	text-indent: 1.8rem;
+}
+
+li {
+	list-style: none;
+	font-size: 1.6rem;	
+}
+
+p {
+	font-size: 1.6rem;
+	text-indent: 1.6rem;
+}
+
+a {
+	color: #302833;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #dc143c;
+	text-decoration: none;
+}
+
+/* ------------------------------------------------------------------- overall */
+
+.full-background {
+ 	background-image: url(../images/background.png);
+}
+
+.container {	
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 4% 10% 10%;
+}
+
+.contents {	
+ 	margin: 3%;
+ 	padding: 3%;
+ 	border-radius: 40px;
+ 	background-color: white;
+}
+
+/* ------------------------------------------------------------------- main visual */
+
+.img_flower-girl {
+ 	background-image: url(../images/flower_girl.jpg);
+ 	background-position: center top;
+ 	background-size: 100% auto;
+ 	background-repeat: no-repeat;
+}
+
+.main-visual_race {
+	position: absolute;
+ 	top: -75%;
+ 	left: -31%;
+	z-index: 2;	
+ 	width: 60%;
+ 	height: 110%;
+	background-image: url(../images/race.png);
+	background-size: 100% auto;
+ 	background-repeat: no-repeat;	
+}
+
+#main-visual {
+	position: relative;
+	margin: 0 auto;
+}
+
+#main-visual:before {
+	display: block;
+	padding-bottom: 56vw;
+	content: "";
+}
+
+/* ------------------------------------------------------------------- main & sub title */
+
+.main-visual_title {
+ 	position: absolute;
+ 	top: 12vw;
+ 	left: 9vw;
+ 	z-index: 3;
+}
+
+.main-title {
+	margin: 0;
+	font-size: 11vw;
+	font-family: 'Pacifico', cursive;
+	animation-duration: 4s;
+}
+
+.sub-title {
+	font-size: 4vw;
+	font-family: 'Questrial', sans-serif;
+ 	text-align: center;
+}
+
+/* ------------------------------------------------------------------- drawer manu */
+
+#what-is-jel-nail,
+#item-merits,
+#item-merit_cost,
+#item-merit_schedule,
+#item-merit_enjoy,
+#hot-topic,
+#nail-slideshow,
+#caution {
+	margin-top: -10%;
+	padding-top: 10%;
+}
+
+ /* ------------------------------------------------------------------- pc-menu default style */
+
+.page-header {
+	opacity: 0.8;
+	position: absolute;
+	bottom: 10%;
+	z-index: 4;
+	width: 100%;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+	background-color: rgb(255,255,255);	
+}
+
+.page-header > .inner {
+	margin: 0 0 auto;
+}
+
+.pc-menu_group {
+	font-weight: 600;
+	text-align: center;
+	animation-duration: 4s;
+}
+
+.pc-menu_item {
+	display: inline-block;
+	padding: 15px 2vw;
+	font-size: 1.4rem;
+}
+
+/* ------------------------------------------------------------------- pc-menu sticky style */
+
+.page-header.sticky {
+	opacity: 1;
+	position: fixed;
+	top: 0;
+	z-index: 5;
+	height: 5rem;
+}
+
+/* ------------------------------------------------------------------- sp-manu */
+
+ .sp-menu {
+ 	display: none;
+}
+
+/* ------------------------------------------------------------------- item-merit */
+
+.flexbox {
+	display: flex;
+}
+
+.flexbox > .contents {
+ 	margin: 3% 1.5%;
+ 	flex-basis: 32%;
+} 
+
+/* ------------------------------------------------------------------- hot-topic */
+
+.hot-topic {
+	overflow: hidden;
+}
+
+.hot-topic-box {
+	float: left;
+	padding-bottom: 5%;
+}
+
+.hot-topic_maintitle {
+ 	padding: 2% 2%;
+}
+
+.hot-topic_subtitle,
+.hot-topic_comment {
+	float: left;
+	width: 60%;
+}
+
+.img_nail_topic {
+	float: right;
+	width: 30%;
+	padding: 1%;
+}
+
+ /* ------------------------------------------------------------------- slick slideshow */
+
+ .nail-slideshow {
+ 	clear: both;
+ 	margin: 0 auto;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: black;
+}
+
+.slider {
+	max-width: 800px;
+	margin: 20px auto;
+    border: 3px solid #696969;
+    box-shadow: 0px 0px 10px;
+}
+
+.img_nail_thumbnail {
+	margin: 10px;
+	border: 3px solid #696969;
+	box-shadow: 0px 0px 5px;
+}
+
+/* ------------------------------------------------------------------- caution */
+
+.contents_caution {
+	border: 6px double #b22222;
+}
+
+/* ------------------------------------------------------------------- page-top return botton */
+
+#page-top {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    font-size: 100%;
+}
+
+#page-top a {
+	display: block;
+	width: 100px;
+	padding: 20px 0;
+	border-radius: 5px;
+	background: #666;
+	color: #fff;
+    text-decoration: none;
+    text-align: center;
+    text-indent: 0;
+}
+
+#page-top a:hover {
+	background: #999;
+    text-decoration: none;
+}
